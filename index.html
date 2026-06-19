@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 The Travel Cafe | Editorial Showcase</title>
+    <meta name="description" content="Surat's most loved travel cafe.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Intro Curtain -->
+    <div class="intro-curtain">
+        <div class="curtain-text">
+            <span>365</span>
+        </div>
+    </div>
+
+    <!-- Minimal Fixed Nav -->
+    <nav class="site-nav">
+        <div class="nav-brand">365 <span class="primary-text">CAFE</span></div>
+        <ul class="nav-links">
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#roastery">Roastery</a></li>
+            <li><a href="#menu">The Menu</a></li>
+            <li><a href="#visit">Visit</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" aria-label="Toggle Theme"><i class="ph ph-sun"></i></button>
+            <button class="nav-cta">Reserve</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Refined Cinematic Hero (Full Bleed) -->
+        <section class="hero-editorial full-bleed-hero">
+            <div class="hero-image-wrap parallax-wrap" id="hero-bg-container">
+                <img src="ChatGPT%20Image%20Jun%2019,%202026,%2002_57_02%20PM.png" alt="Cafe Background 1" class="parallax-img hero-slide active">
+                <img src="ChatGPT%20Image%20Jun%2019,%202026,%2004_19_49%20PM.png" alt="Cafe Background 2" class="parallax-img hero-slide">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1920&q=80" alt="Cafe Background 3" class="parallax-img hero-slide">
+                <div class="hero-dark-overlay"></div>
+            </div>
+            
+            <div class="hero-content-inner container-fluid">
+                <!-- Left Side Content -->
+                <div class="hero-left reveal-up">
+                    <h1 class="massive-title">
+                        <span class="line">Coffee.</span>
+                        <span class="line">Views.</span>
+                        <span class="line italic-line primary-text">Memories.</span>
+                    </h1>
+                    
+                    <p class="hero-desc">Global flavors, specialty coffee,<br>and an atmosphere crafted<br>for wanderlust.</p>
+                    
+                    <a href="#menu" class="btn-outline-pill">Explore Our Menu <i class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Right Side Floating Review -->
+                <div class="hero-right reveal-left" style="transition-delay: 0.3s;">
+                    <div class="glass-review-card">
+                        <div class="review-header">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i>
+                            </div>
+                            <span class="review-score">4.9 (230+ reviews)</span>
+                        </div>
+                        <p class="review-quote">"An absolute gem in Surat. The ambiance, coffee and hospitality — perfect!"</p>
+                        <div class="review-avatars">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="User">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom Left Slider Nav -->
+                <div class="hero-slider-nav reveal-up" style="transition-delay: 0.5s;">
+                    <div class="slider-controls-left">
+                        <div class="slider-numbers">
+                            <span class="slide-num active" data-slide="0">01</span>
+                            <span class="slide-num" data-slide="1">02</span>
+                            <span class="slide-num" data-slide="2">03</span>
+                        </div>
+                        <div class="slider-progress"><div class="progress-bar" id="hero-progress"></div></div>
+                    </div>
+                    <div class="slider-arrows">
+                        <button class="slider-arrow prev" id="hero-prev"><i class="ph ph-arrow-left"></i></button>
+                        <button class="slider-arrow next" id="hero-next"><i class="ph ph-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Bottom Right Scroll Indicator -->
+                <div class="hero-bottom-scroll reveal-up" style="transition-delay: 0.6s;">
+                    <span>SCROLL</span>
+                    <i class="ph ph-arrow-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Magazine Spread: The Story -->
+        <section id="story" class="editorial-spread">
+            <div class="spread-container">
+                <div class="spread-left reveal-up">
+                    <h2 class="section-heading">A journey<br>in every cup.</h2>
+                    <p class="drop-cap">We believe that a meal is more than just food; it's a passport to new cultures and experiences. 365 The Travel Cafe was born from a passion for exploring the globe and bringing the finest culinary discoveries back home to Surat.</p>
+                    <p class="spread-text">From carefully sourced beans roasted to perfection, to globally inspired dishes prepared with local, fresh ingredients, we put our heart into everything we serve. It's an environment where every sip and bite feels like a mini-vacation.</p>
+                </div>
+                <div class="spread-right parallax-wrap">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_8YOjDMwPrxu3G7u_Ye5YY3DRD3bAr7jAXcX3xD6zkHyVvR1ZnrJ0Uy85Hltlod4XKkQPBSoAYWraVjgFR7L5Hrx64YXO6LytBCg_0R0-cAbYrSsS0-SSjvHYQIuIgbcGK3vgZVRdeS2w=s680-w680-h510-rw" alt="Cafe Details" class="parallax-img portrait-img">
+                    <div class="floating-caption">Crafted Daily</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roastery / Process Section -->
+        <section id="roastery" class="roastery-section">
+            <div class="roastery-content">
+                <div class="roastery-text reveal-right">
+                    <div class="overline-text">Our Process</div>
+                    <h2 class="section-heading">The<br><span class="primary-text italic-text">Roastery.</span></h2>
+                    <p>Our commitment to coffee starts at the source. We partner directly with sustainable farms around the globe to bring you single-origin beans with distinct, vibrant flavor profiles. Roasted in-house to highlight their natural sweetness and complexity.</p>
+                    <a href="#" class="btn-outline-pill mt-4">Shop Our Beans <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="roastery-image-wrapper reveal-left">
+                    <div class="roastery-image">
+                        <img src="https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="In-house Coffee Roasting">
+                    </div>
+                    <!-- Rotating Badge moved to wrapper to avoid clipping -->
+                    <div class="spinning-badge">
+                        <svg viewBox="0 0 100 100">
+                            <path id="curve" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+                            <text>
+                                <textPath href="#curve">FRESHLY ROASTED DAILY • </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editorial Grid Gallery -->
+        <section class="editorial-gallery">
+            <div class="gallery-header reveal-up text-center">
+                <h2 class="section-heading">Vibrant &<br><span class="italic-text primary-text">Authentic.</span></h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-img g-img-1 reveal-up">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEveJ-0cNbcdMKOzyAmQ_ZM-H3372dX_x0oOWkmMdd_CyS8RoyU_rDqANWfOn6shTNKV2xxHIEhzc3QOTjY49p3nXBCAdz05AFk79AvKMr9BVySr64SAkkX1CygInDUt1LAH3bZ=s680-w680-h510-rw" alt="Signature Flavors">
+                    <div class="img-caption">Signature Flavors</div>
+                </div>
+                <div class="gallery-img g-img-2 reveal-up" style="transition-delay: 0.2s;">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE4lsI6oSVCRrJXC2gqANppgJ6J4UdiPeIzRn-x22AawlcXW85xevfpBqam2crn1PPQNrogpzS-D-CQ4bHELPr_Ki1vTo1W8ZWfe0OLDq8jT17kl1zATNRJLOhybaZZ0pL5cJJe=s680-w680-h510-rw" alt="Intimate Ambience">
+                    <div class="img-caption">Intimate Ambience</div>
+                </div>
+                <div class="gallery-img g-img-3 reveal-up" style="transition-delay: 0.4s;">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_8YOjDMwPrxu3G7u_Ye5YY3DRD3bAr7jAXcX3xD6zkHyVvR1ZnrJ0Uy85Hltlod4XKkQPBSoAYWraVjgFR7L5Hrx64YXO6LytBCg_0R0-cAbYrSsS0-SSjvHYQIuIgbcGK3vgZVRdeS2w=s680-w680-h510-rw" alt="Perfect Pours">
+                    <div class="img-caption">Perfect Pours</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Premium Menu -->
+        <section id="menu" class="premium-menu-section">
+            <div class="menu-split-container">
+                <!-- Left: Sticky Header & Image Reveal -->
+                <div class="menu-left reveal-up">
+                    <div class="menu-sticky-content">
+                        <h2 class="section-heading">Curated<br><span class="primary-text italic-text">Offerings.</span></h2>
+                        <p class="menu-intro">A glimpse into our meticulously crafted menu, blending local Surat flavors with global culinary traditions.</p>
+                        
+                        <!-- Dynamic Image that changes on hover -->
+                        <div class="menu-hover-image">
+                            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Menu Item Preview" id="dynamic-menu-img">
+                        </div>
+                        
+                        <div style="margin-top: 3rem;">
+                            <a href="#" class="btn-outline-pill">Download Full Menu <i class="ph ph-download-simple"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: The Menu List -->
+                <div class="menu-right reveal-up" style="transition-delay: 0.2s;">
+                    <div class="menu-category-wrapper">
+                        <h3 class="menu-category-title">Coffee & Brews</h3>
+                        <ul class="premium-menu-list">
+                            <li class="menu-row" data-img="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                                <div class="menu-row-main">
+                                    <h4 class="menu-item-title">The 365 Signature Pour</h4>
+                                    <span class="menu-item-price">₹350</span>
+                                </div>
+                                <div class="menu-row-desc">Single-origin Ethiopian Yirgacheffe, slow-dripped over 12 hours.</div>
+                            </li>
+                            <li class="menu-row" data-img="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                                <div class="menu-row-main">
+                                    <h4 class="menu-item-title">Smoked Vanilla Latte</h4>
+                                    <span class="menu-item-price">₹280</span>
+                                </div>
+                                <div class="menu-row-desc">House-smoked vanilla bean syrup, double espresso, velvety microfoam.</div>
+                            </li>
+                            <li class="menu-row" data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                                <div class="menu-row-main">
+                                    <h4 class="menu-item-title">Surat Spiced Cold Brew</h4>
+                                    <span class="menu-item-price">₹320</span>
+                                </div>
+                                <div class="menu-row-desc">Infused with roasted coriander and a hint of cardamom.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category-wrapper" style="margin-top: 4rem;">
+                        <h3 class="menu-category-title">Global Plates</h3>
+                        <ul class="premium-menu-list">
+                            <li class="menu-row" data-img="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                                <div class="menu-row-main">
+                                    <h4 class="menu-item-title">Truffle Mushroom Toast</h4>
+                                    <span class="menu-item-price">₹450</span>
+                                </div>
+                                <div class="menu-row-desc">Wild mushrooms, truffle oil, whipped ricotta on sourdough.</div>
+                            </li>
+                            <li class="menu-row" data-img="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                                <div class="menu-row-main">
+                                    <h4 class="menu-item-title">The Wanderlust Bowl</h4>
+                                    <span class="menu-item-price">₹520</span>
+                                </div>
+                                <div class="menu-row-desc">Quinoa, roasted sweet potato, edamame, miso-tahini dressing.</div>
+                            </li>
+                            <li class="menu-row" data-img="https://images.unsplash.com/photo-1623341214825-9f4f963727da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                                <div class="menu-row-main">
+                                    <h4 class="menu-item-title">Saffron Pistachio Croissant</h4>
+                                    <span class="menu-item-price">₹380</span>
+                                </div>
+                                <div class="menu-row-desc">Twice-baked, filled with rich saffron-infused pistachio frangipane.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Testimonials Slider -->
+        <section class="testimonials-section">
+            <div class="testimonials-header reveal-up">
+                <h2 class="section-heading text-center">Words From<br><span class="primary-text italic-text">Our Guests.</span></h2>
+            </div>
+            
+            <div class="testimonials-slider reveal-up" style="transition-delay: 0.2s;">
+                <div class="testimonial-track">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <i class="ph-fill ph-quotes slide-icon"></i>
+                        <h3 class="slide-quote">"An absolute gem in Surat. The ambiance transports you straight to a European bistro, and the coffee is the best I've had in the city."</h3>
+                        <p class="slide-author">— Priya R.</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <i class="ph-fill ph-quotes slide-icon"></i>
+                        <h3 class="slide-quote">"The Truffle Mushroom Toast is life-changing. Every detail, from the playlist to the lighting, is curated to perfection."</h3>
+                        <p class="slide-author">— Rohan M.</p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <i class="ph-fill ph-quotes slide-icon"></i>
+                        <h3 class="slide-quote">"Finally, a place in Surat that understands specialty coffee. The pour-over experience here is unmatched."</h3>
+                        <p class="slide-author">— Anjali D.</p>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="ph ph-arrow-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-btn next-btn"><i class="ph ph-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram / Vibe Grid -->
+        <section class="vibe-grid-section">
+            <div class="vibe-header reveal-up">
+                <h4>@365TravelCafe</h4>
+                <a href="#" class="vibe-link">Follow our journey</a>
+            </div>
+            <div class="vibe-grid reveal-up">
+                <a href="#" class="vibe-item">
+                    <div class="vibe-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Cafe Vibe 1">
+                        <div class="vibe-overlay"><i class="ph-fill ph-instagram-logo"></i></div>
+                    </div>
+                </a>
+                <a href="#" class="vibe-item">
+                    <div class="vibe-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Cafe Vibe 2">
+                        <div class="vibe-overlay"><i class="ph-fill ph-instagram-logo"></i></div>
+                    </div>
+                </a>
+                <a href="#" class="vibe-item">
+                    <div class="vibe-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=600&q=80" alt="Cafe Vibe 3">
+                        <div class="vibe-overlay"><i class="ph-fill ph-instagram-logo"></i></div>
+                    </div>
+                </a>
+                <a href="#" class="vibe-item">
+                    <div class="vibe-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Cafe Vibe 4">
+                        <div class="vibe-overlay"><i class="ph-fill ph-instagram-logo"></i></div>
+                    </div>
+                </a>
+                <a href="#" class="vibe-item">
+                    <div class="vibe-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Cafe Vibe 5">
+                        <div class="vibe-overlay"><i class="ph-fill ph-instagram-logo"></i></div>
+                    </div>
+                </a>
+                <a href="#" class="vibe-item">
+                    <div class="vibe-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=600&q=80" alt="Cafe Vibe 6">
+                        <div class="vibe-overlay"><i class="ph-fill ph-instagram-logo"></i></div>
+                    </div>
+                </a>
+                <a href="#" class="vibe-item">
+                    <div class="vibe-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=600&q=80" alt="Cafe Vibe 7">
+                        <div class="vibe-overlay"><i class="ph-fill ph-instagram-logo"></i></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Bold Footer -->
+        <footer id="visit" class="editorial-footer">
+            <div class="footer-top reveal-up">
+                <h2 class="massive-footer-title">Let's grab<br><span class="primary-text italic-line">a coffee.</span></h2>
+            </div>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h5>Locations</h5>
+                    <p>City Light<br>Adajan<br>Pal</p>
+                    <p class="primary-text mt-2" style="font-size:0.9rem; letter-spacing:0.1em; text-transform:uppercase;">Surat, Gujarat</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Hours</h5>
+                    <p>Mon - Sun<br>8:00 AM - 11:00 PM</p>
+                </div>
+                <div class="footer-col newsletter">
+                    <h5>Join the club</h5>
+                    <p style="color:var(--c-text-muted); margin-bottom: 1.5rem;">Exclusive tasting events and coffee secrets.</p>
+                    <div class="minimal-input">
+                        <input type="email" placeholder="Your email address">
+                        <button><i class="ph ph-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <!-- Massive Watermark -->
+            <div class="footer-watermark reveal-up">
+                365 CAFE
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
