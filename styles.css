@@ -44,7 +44,7 @@ html {
 }
 
 html {
-    overflow-x: hidden; /* Required on iOS to prevent horizontal scroll */
+    overflow-x: clip; /* clip = no scroll container created, so position:sticky works! */
     scroll-behavior: smooth;
 }
 
@@ -54,8 +54,7 @@ body {
     background-color: var(--c-bg);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    max-width: 100vw;
+    overflow-x: clip; /* clip instead of hidden — fixes sticky positioning */
 }
 
 img {
@@ -878,15 +877,17 @@ body.light-mode .img-caption {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 8rem;
+    /* DO NOT add align-items here — default 'stretch' is required for sticky to work */
 }
 
 .menu-left {
     position: relative;
+    /* align-self:stretch is the DEFAULT — do not override it */
 }
 
 .menu-sticky-content {
     position: sticky;
-    top: 100px; /* Reduced from 150px to leave more room */
+    top: 120px;
 }
 
 .menu-intro {
