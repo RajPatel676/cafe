@@ -43,6 +43,11 @@ html {
     font-size: 16px;
 }
 
+html {
+    overflow-x: hidden; /* Required on iOS to prevent horizontal scroll */
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--c-text-main);
@@ -50,6 +55,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 img {
@@ -1442,15 +1448,23 @@ body.light-mode .hero-bottom-scroll {
     height: 100dvh;
     background: var(--c-bg);
     z-index: 2000;
-    display: flex;
+    display: none; /* Hidden on desktop always */
     flex-direction: column;
-    padding: 2rem 2rem 3rem;
+    padding: 1.5rem 2rem 3rem;
     transition: right 0.45s cubic-bezier(0.25, 1, 0.5, 1);
     border-left: 1px solid var(--c-border);
     box-shadow: -20px 0 60px rgba(0,0,0,0.4);
 }
 
 .mobile-drawer.open { right: 0; }
+
+/* Only show drawer on mobile */
+@media (max-width: 768px) {
+    .mobile-drawer {
+        display: flex; /* Enable on mobile */
+        right: -100%; /* But start off-screen */
+    }
+}
 
 .drawer-overlay {
     position: fixed;
@@ -1569,15 +1583,25 @@ body.light-mode .hero-bottom-scroll {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-        padding: 0 1.5rem 6rem;
+        padding: 0 1.2rem 6rem;
         gap: 0;
+        box-sizing: border-box;
+        width: 100%;
     }
-    .hero-left { max-width: 100%; margin-top: 0; }
-    .full-bleed-hero .massive-title { font-size: clamp(2.8rem, 12vw, 4.5rem); }
+    .hero-left {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+    .full-bleed-hero .massive-title {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+        word-break: break-word;
+    }
     .hero-desc { font-size: 0.9rem; max-width: 100%; }
     /* Hide review card on mobile — too crowded */
     .hero-right { display: none; }
-    .hero-slider-nav { bottom: 1.2rem; left: 1.5rem; gap: 0.8rem; }
+    .hero-slider-nav { bottom: 1.2rem; left: 1.2rem; gap: 0.8rem; }
     .slider-progress { width: 80px; }
     .slider-arrow { width: 34px; height: 34px; font-size: 0.85rem; }
     .hero-bottom-scroll { display: none; }
