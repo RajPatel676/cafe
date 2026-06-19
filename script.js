@@ -23,6 +23,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Hamburger / Mobile Drawer ---
+    const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('mobile-drawer');
+    const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerClose = document.getElementById('drawer-close');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    function openDrawer() {
+        hamburger?.classList.add('open');
+        drawer?.classList.add('open');
+        drawerOverlay?.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+        hamburger?.classList.remove('open');
+        drawer?.classList.remove('open');
+        drawerOverlay?.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    hamburger?.addEventListener('click', openDrawer);
+    drawerClose?.addEventListener('click', closeDrawer);
+    drawerOverlay?.addEventListener('click', closeDrawer);
+    drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
+
     // --- Navbar Scroll Effect ---
     const nav = document.querySelector('.site-nav');
     window.addEventListener('scroll', () => {

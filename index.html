@@ -40,8 +40,29 @@
         <div class="nav-actions">
             <button class="theme-toggle" aria-label="Toggle Theme"><i class="ph ph-sun"></i></button>
             <button class="nav-cta">Reserve</button>
+            <!-- Hamburger for Mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button class="drawer-close" id="drawer-close"><i class="ph ph-x"></i></button>
+        <div class="drawer-brand">365 <span class="primary-text">CAFE</span></div>
+        <ul class="drawer-links">
+            <li><a href="#story" class="drawer-link">Our Story</a></li>
+            <li><a href="#roastery" class="drawer-link">Roastery</a></li>
+            <li><a href="#menu" class="drawer-link">The Menu</a></li>
+            <li><a href="#visit" class="drawer-link">Visit</a></li>
+        </ul>
+        <a href="#" class="btn-outline-pill" style="margin-top: auto;">Reserve a Table <i class="ph ph-arrow-right"></i></a>
+        <div class="drawer-footer">@365TravelCafe</div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
 
     <main>
         <!-- Refined Cinematic Hero (Full Bleed) -->
@@ -67,7 +88,7 @@
                     <a href="#menu" class="btn-outline-pill">Explore Our Menu <i class="ph ph-arrow-right"></i></a>
                 </div>
 
-                <!-- Right Side Floating Review -->
+                <!-- Right Side Floating Review — hidden on mobile via CSS -->
                 <div class="hero-right reveal-left" style="transition-delay: 0.3s;">
                     <div class="glass-review-card">
                         <div class="review-header">
